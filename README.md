@@ -1,5 +1,6 @@
 
 
+
 # [PT-BR] - uma coletânia de conceitos + estudos básicos
 > Uma tentativa de anotar uma sequência básica de javascript, seguindo a ordem e ensinamentos do curso de JS de [Roger Melo](https://www.twitter.com/rogermelo). 
 
