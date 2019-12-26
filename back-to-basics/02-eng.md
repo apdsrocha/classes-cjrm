@@ -1,18 +1,26 @@
-# types of data
+# Data Types
 
 In JavaScript there are 8 data types
+
 > Number (whole numbers or decimals)
+
 > String (chain of characters, meaning, text)
+
 > Boolean (indicates true or false)
+
 > Null (value not yet set by the user)
+
 > Undefined (value not yet set by JS)
+
 > Object (complex data structures - arrays, dates, literals, etc)
+
 > Symbol (used with objects)
+
 > BigInt (used to manipulate larger numbers)
 
 
 ## 1) Strings
-# Strings are kept between single or double quotes 
+**Strings are kept between single or double quotes** 
 ```
 'hello, world'
 "hello, world"
@@ -33,7 +41,7 @@ If we want to access the index position of `o` in `hello`:
 greeting[4]
 ```
 
-**strings have properties and methods:** 
+**Strings have properties and methods:** 
 > To specify a property we use  `.` followed by the property.
 `.length` is a property that counts the number of characters in a string.
 
