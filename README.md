@@ -7,6 +7,7 @@
 **Index**
 
 [Básicos - variáveis](/back-to-basics/01-pt.md).
+[Básicos - tipos de dados](/back-to-basics/02-pt.md).
 
 
 # [EN] - study notes + basic concepts
@@ -15,6 +16,7 @@
 **Index**
 
 [Basics - variables](/back-to-basics/01-eng.md).
+[Basics - data types](/back-to-basics/02-eng.md).
 
 
 
