@@ -82,3 +82,49 @@ name.slice(0, 2) // An
 ```
 name.replace('n', 'd') // Ada
 ```
+
+## 2) Numbers
+**Numbers can be stored in variables - decimals should use  `.` instead of `,`**
+```
+const radius = 10
+const pi = 3.14
+```
+> Arithmetic Operators
+
+`*` multiplier
+
+`+` addition
+
+`-` subtraction
+
+`/` division
+
+`**` exponent
+
+> Order of operation: obeys the same rules as math (1st parentheses, 2nd exponents or roots, 3rd multiplication or division, 4th addition and subtraction)
+
+> Increment operators
+```
+let postLikes = 10
+postLikes++ 
+// postLikes = postLikes + 1 
+// 11
+
+postLikes--
+// postLikes = postLikes - 1 
+// 9
+
+postLikes += 10
+// postLikes = postLikes + 10 
+// 20
+```
+
+> Operations that don't result in a number: NaN
+```
+(7 / 'hi') // NaN
+```
+
+> String Concatenation with numbers: JS converts numbers to string, so the result of a concatenation between a string and a number will always be a string.
+```
+const likesMessage = 'The post has' + postLikes + 'likes.' // 'The post has 10 likes.'
+```
