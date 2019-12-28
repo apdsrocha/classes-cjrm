@@ -128,3 +128,63 @@ postLikes += 10
 ```
 const likesMessage = 'The post has' + postLikes + 'likes.' // 'The post has 10 likes.'
 ```
+
+
+## 3) Objects
+**Arrays are used to store a list of values that usually have some relation to each other**
+```
+let heroes = ['Batman', 'Catwoman', 'Iron Man']
+
+```
+
+To change values writing over given positions in the array:
+```
+heroes[2] = 'SpiderMan'
+
+```
+It's possible to store different types of data in the same array:
+```
+const randomArray = ['Parker', 'Diana', 19, 18]
+
+```
+**Array properties and methods**
+
+`.length` returns the amount of items in an array
+```
+let heroes = ['Batman, 'Catwoman', 'Iron Man']
+heroes.length // 3
+```
+
+`.join()` returns a new string with every item in the array separated by a comma. It can receive an optional argument that acts as a separator instead of the comma.
+```
+heroes.join() // Batman,Catwoman,Iron Man
+
+heroes.join('|) // Batman|Catwoman|Iron Man
+
+```
+
+`.indexOf()` returns the index of the given argument. If the argument doesn't exist in the array, it returns -1
+```
+heroes.indexOf('Batman') // 0
+
+heroes.indexOf('Hulk') // -1
+
+```
+
+`.concat()` joins the array which invoked the method adding whatever was passed on as an argument. Doesn't alter the original array. 
+```
+heroes.concat(['SpiderMan', 'Wolverine']) // ['Batman, 'Catwoman', 'Iron Man', 'SpiderMan', 'Wolverine']
+
+```
+
+`.push()` includes the items passed on as arguments in the original array. Returns the new number of items in the array after adding the arguments. It changes the original array, resulting in a value mutation.
+```
+heroes.push('Cyclops', 'Superman') // ['Batman, 'Catwoman', 'Iron Man', 'Cyclops', 'Superman']
+
+```
+
+`.pop()` removes the last item in the array and returns that item. Also modifies the original array.
+```
+heroes.pop() // 'Superman'
+
+```
