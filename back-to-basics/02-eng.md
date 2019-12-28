@@ -159,7 +159,7 @@ heroes.length // 3
 ```
 heroes.join() // Batman,Catwoman,Iron Man
 
-heroes.join('|) // Batman|Catwoman|Iron Man
+heroes.join('|') // Batman|Catwoman|Iron Man
 
 ```
 
@@ -187,4 +187,32 @@ heroes.push('Cyclops', 'Superman') // ['Batman, 'Catwoman', 'Iron Man', 'Cyclops
 ```
 heroes.pop() // 'Superman'
 
+```
+
+## 4 & 5) Null and Undefined
+
+>These two types are similar and both represent the lack of value. The difference between them is that `null` needs to be intentionally atributed. 
+
+Every time we declare a variable without atributing any value, JavaScript sets it to `undefined` 
+```
+let emptiness 
+console.log(emptiness)  // undefined
+```
+
+If we try to use `undefined` in a numerical expression, we get `NaN`
+```
+emptiness + 3 // NaN
+```
+
+To purposelly indicate that a variable doesn't have a value stored in it, `null` should be used. 
+```
+let emptiness = null
+console.log(emptiness)  // null
+
+```
+
+When we execute a mathematical operation using  `null`  it is interpreted as zero and doesn't throw an error.
+```
+
+emptiness + 3 // 3
 ```
