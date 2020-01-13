@@ -216,3 +216,51 @@ When we execute a mathematical operation using  `null`  it is interpreted as zer
 
 emptiness + 3 // 3
 ```
+## 6) Booleans
+
+> `true` and `false` are reserved words and data types that are used to verify conditions - whether a piece of code evaluates to true or false. 
+
+```
+const email = 'brucewayne@gmail.com'
+const includes = email.includes('@')
+
+console.log(includes)  // true
+```
+
+**Comparison Operators**
+
+These are used to compare a value to another, and the comparison should return a boolean.
+
+```
+const age = 31
+
+console.log(age == 31)  // true
+```
+
+Remember: `=` means attribution and `==` means comparison.
+
+To write "different than", you should use `!=` 
+```
+console.log(age != 31)  // false
+```
+
+Other number comparisons:
+```
+console.log(age > 10)  // true
+console.log(age < 10)  // false
+console.log(age <= 31>)  // true
+console.log(age >= 31>)  // true
+
+```
+
+String comparisons:
+```
+const name = 'ana'
+
+console.log(name == 'ana')  // true
+console.log(name == 'Ana')  // false
+console.log(name > 'bel' )  // false ('a' comes before 'b')
+console.log(name > 'Ana' )  // true (lowercase comes before upper case)
+
+```
+
