@@ -287,3 +287,50 @@ console.log( 31 !== '31' ) // true
 
 ```
 That's why it's safer to stick with strict comparisons.
+
+### Type conversion
+
+It's possible to convert a determined data type into another. In some moments that might come in handy to achieve specific results.
+
+``` 
+let score = '100'
+
+console.log(score + 1) // 1001 adds strings to numbers resulting in another string.
+``` 
+It's possible to convert a string into a number and after that go through with the operation.
+``` 
+score = Number(score)  // reference 'score', reatribute the value turning a string into number, calling a constructor.
+
+``` 
+The type is modified when passing this string as an argument for a Number constructor.
+
+``` 
+console.log(score) // 101
+console.log(typeof score) // number
+``` 
+
+**Converting other types of data**
+
+``` 
+const crazyConversion = Number('Apple') // NaN (math operation that doesn't make sense)
+
+const convertedNumber = String(97) // '97' (string)
+
+const booleanConversion == Boolean(10) // true (truthy value)
+
+```
+
+### Truthy e Falsy Values
+
+JavaScript atributes values `true` & `false` to determined values/types. 
+
+**Falsy Values**
+
+> false
+> 0
+> "" ou ''
+> null
+> undefined 
+> NaN
+
+Any other value returns `true`
