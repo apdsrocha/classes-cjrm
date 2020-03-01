@@ -327,10 +327,15 @@ JavaScript atributes values `true` & `false` to determined values/types.
 **Falsy Values**
 
 > false
+
 > 0
+
 > "" ou ''
+
 > null
+
 > undefined 
+
 > NaN
 
 Any other value returns `true`
