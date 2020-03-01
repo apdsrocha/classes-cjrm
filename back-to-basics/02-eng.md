@@ -264,3 +264,26 @@ console.log(name > 'Ana' )  // true (lowercase comes before upper case)
 
 ```
 
+**Strict comparisons**
+
+When we used `==` we run the risk of having an equality in an expression that involves different types.
+
+```
+// 'Equal to' and 'different than'
+console.log( 31 == 31 ) // true
+console.log( 31 == '31' ) // true
+console.log( 31 != 31 ) // false
+console.log( 31 != '31' ) // false
+
+```
+To avoid this, we use `===` to have a strict comparison.
+```
+// 'Equal to, and with the same type' and 'different than, and with the same type'
+console.log( 31 === 31 ) // true
+console.log( 31 === '31' ) // false - since we're checking value AND type
+
+console.log( 31 !== 31 ) // false
+console.log( 31 !== '31' ) // true
+
+```
+That's why it's safer to stick with strict comparisons.
