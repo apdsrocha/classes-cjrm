@@ -58,3 +58,26 @@ while( i < 5 ) {
 // Number running in the loop: 4
 
 ```
+
+
+## If
+
+If statements are another way to control flux - this structure means that if a certain condition is met (results in `true` ), then a block of code is executed once. This means it doesn't have counters like we have in loops. 
+
+```
+let dozen = 12
+
+if (dozen > 100) {
+  console.log('This amount is larger than 100')
+}
+// nothing shows up in the console because the condition is false and does not return `true`
+
+let  thousand = 1000
+
+if (thousand > 100) {
+  console.log('This amount is larger than 100')
+}
+
+// The sentence shows up in the console since the condition is met and returns `true`
+
+```
