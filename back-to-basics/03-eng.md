@@ -81,3 +81,23 @@ if (thousand > 100) {
 // The sentence shows up in the console since the condition is met and returns `true`
 
 ```
+
+
+
+## Else If
+
+When we must check for multiple conditions, we can use `else if` to establish them. Remember, we only want one of these blocks of code to be executed.
+
+```
+const password = 'oi123'
+
+if (password.length >= 20) {
+  console.log('password must have less than 20 characteres')
+} else if (password.length >= 8) {
+  console.log('strong password! :) ')
+} else {
+  console.log('password must have more than 8 caracters' )
+}
+// the first two conditions do not return `true`, so the third console is shown.
+
+```
