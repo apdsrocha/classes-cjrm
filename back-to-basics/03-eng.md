@@ -101,3 +101,23 @@ if (password.length >= 20) {
 // the first two conditions do not return `true`, so the third console is shown.
 
 ```
+## Logical Operators || and &&
+
+By making use of logical operators we can combine different conditions in a single verification.
+
+`||` means "OR"
+`&&` means "AND"
+
+```
+const password = 'oi123'
+
+if (password.length >= 8 && password.includes('1')) {
+    console.log('doesn't answer both conditions')
+} else if (password.length >= 8 || password.includes('1')) {
+    console.log('answers online one)
+}
+
+// the second condition inside the first `if` does not return `true`, so the code block inside it doesn't run. 
+// the else if has an "OR", so it only takes one of them being `true` for the code to run (which is what happens).
+
+```
