@@ -121,3 +121,68 @@ if (password.length >= 8 && password.includes('1')) {
 // the else if has an "OR", so it only takes one of them being `true` for the code to run (which is what happens).
 
 ```
+
+## Logical Operator ! 
+
+The exclamation point (logical operator 'not') inverts the value of the boolean.
+
+```
+console.log(!true)  \\ false
+console.log(!false) \\ true
+
+```
+Notice that the `!` does not reassign value, it only changes the boolean result of the expression.
+
+```
+let isUserLoggedIn = false
+if (!isUserLoggedIn) {
+  console.log('you must log in to continue')
+}
+
+// code block is executed
+```
+
+
+## Break & Continue
+
+`break` & `continue` are two key-words related to loops.
+
+**break** = indicates that the loop is interupted, with no new iterations.
+
+```
+const scores = [50, 25, 0, 30, 100, 20, 10]
+for(let i=0; i < scores.length; i++) {
+  console.log(`your score is: ${scores[i]}`)
+  if(scores[i] === 100) {
+    break
+  }
+}
+
+// your score is: 50
+// your score is: 25
+// your score is: 0
+// your score is: 30
+// your score is:100
+
+```
+
+**continue** = indicates that the current iteration should be skipped, not executing the rest of the code block and proceeding to the next iteration.
+
+```
+const scores = [50, 25, 0, 30, 100, 20, 10]
+for(let i=0; i < scores.length; i++) {
+  if(scores[i] === 0) {
+    continue
+  }
+  console.log(`your score is: ${scores[i]}`)
+  if(scores[i] === 100) {
+    break
+  }
+}
+
+// your score is: 50
+// your score is: 25
+// your score is: 30
+// your score is:100
+
+```
