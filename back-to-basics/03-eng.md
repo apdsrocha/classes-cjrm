@@ -186,3 +186,32 @@ for(let i=0; i < scores.length; i++) {
 // your score is:100
 
 ```
+
+
+## Switch 
+
+Switch statements are structures that evaluate an expression and allow you to write several cases and execute only the one that meets the specified expression.
+
+
+```
+const grade = 'B'
+
+switch (grade) {  
+  case 'A':
+    console.log('your grade is A')
+    break
+  case 'B':
+    console.log('your grade is B')
+    break
+  case 'C':
+    console.log('your grade is C')
+    break
+  case 'D':
+    console.log('your grade is D')
+    break
+  case 'F':
+    console.log('your grade is F')
+    break
+  default:
+    console.log('invalid grade')
+}
