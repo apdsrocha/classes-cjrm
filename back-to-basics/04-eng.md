@@ -54,3 +54,38 @@ const showFood() {
 
 // this throws an error, as it is not possible to invoke a function that does not yet exist.
 ```
+
+## Arrow Functions
+
+> They are one of the additions to modern JS, and one of their uses is to make the syntax shorter and more concise.
+
+```
+// Traditional Function syntax 
+
+const double = function(number) {
+  return number * 2
+}
+
+// let's change to the arrow function syntax.
+```
+
+
+>> 1st: It's not necessary to use the word `function`
+```
+const double = (number) => {
+  return number * 2
+}
+```
+
+>> 2nd: If you have only one parameter, you don't need to use `()`, but if you have more than one parameter, or no parameter, or you want to use the default value, `()` are mandatory again.
+```
+const double = number => {
+  return number * 2
+}
+```
+
+>> 3rd: When the code block contains only one line returning a value, we can eliminate the brackets and the word `return`, leaving everything in only one line.
+```
+const double = number => number *2
+```
+**Note - we're talking about returning an expression: any piece of code that results in a value. That is, code blocks (if, or switch for example are not expressions that result in a value).**
