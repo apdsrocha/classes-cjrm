@@ -102,3 +102,18 @@ name.toUpperCase(name)
 \\ toUpperCase is a string method.
 
 ```
+
+## ForEach
+
+> `forEach` is an array method for iteration. It works as a `for`, but in a more elegant and functional way. Its invocation requires a callback function as an argument. We can use three parameters in `forEach`: the array item, its index and the total array.
+```
+const fruits = ['apple', 'banana', 'watermelon']
+
+fruits.forEach( (fruit, index, array) => {
+  console.log( index, fruit, array )
+})
+
+// 0 "apple" (3) ["apple", "banana", "watermelon"]
+// 1 "banana" (3) ["apple", "banana", "watermelon"]
+// 2 "watermelon" (3) ["apple", "banana", "watermelon"]
+```
