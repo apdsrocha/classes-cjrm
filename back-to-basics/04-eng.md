@@ -106,6 +106,8 @@ name.toUpperCase(name)
 ## ForEach
 
 > `forEach` is an array method for iteration. It works as a `for`, but in a more elegant and functional way. Its invocation requires a callback function as an argument. We can use three parameters in `forEach`: the array item, its index and the total array.
+
+**Note: callbacks are functions that are passed along as arguments to other functions or methods when they're invoked.**
 ```
 const fruits = ['apple', 'banana', 'watermelon']
 
