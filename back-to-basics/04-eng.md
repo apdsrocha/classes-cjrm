@@ -89,3 +89,16 @@ const double = number => {
 const double = number => number *2
 ```
 **Note - we're talking about returning an expression: any piece of code that results in a value. That is, code blocks (if, or switch for example are not expressions that result in a value).**
+
+## Methods
+
+> Methods are also functions, but they are invoked differently: through dot-notation. They are functions associated with objects or data types such as strings.  Methods are created directly on the object or on the data type itself (functions are created on their own).
+
+```
+const name = 'ana'
+
+name.toUpperCase(name)
+
+\\ toUpperCase is a string method.
+
+```
