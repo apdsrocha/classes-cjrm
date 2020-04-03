@@ -34,3 +34,15 @@ To modify values, simply subscribe to the properties
 user.name = 'Jose'
 user[name] = 'Juan'
 ```
+
+To add actions (methods), create a property that stores a function. To access this method, it is necessary to invoke this property with `()` (just like any other function).
+
+```
+let user = {
+  login: function() {
+    console.log('User logged in')
+  }
+}
+
+user.login()
+```
