@@ -14,6 +14,7 @@
 
 [Funções e Métodos](/back-to-basics/04-pt.md).
 
+[Objetos](/back-to-basics/05-pt.md).
 
 # [EN] - study notes + basic concepts
 > An attempt at taking notes of the logical sequence [Roger Melo](https://www.twitter.com/rogermelo) established in his JS course.
@@ -27,5 +28,7 @@
 [Basics - control flux](/back-to-basics/03-eng.md).
 
 [Functions and Methods](/back-to-basics/04-eng.md).
+
+[Objects](/back-to-basics/05-eng.md).
 
 
