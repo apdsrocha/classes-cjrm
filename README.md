@@ -18,6 +18,8 @@
 
 [Escopo](/class-notes/06-pt.md).
 
+[A palavra-chave 'this'](/class-notes/07-pt.md).
+
 # [EN] - study notes + basic concepts
 > An attempt at taking notes of the logical sequence [Roger Melo](https://www.twitter.com/rogermelo) established in his JS course.
 
@@ -35,3 +37,4 @@
 
 [Scope](/class-notes/06-eng.md).
 
+[The keyword 'this'](/class-notes/07-eng.md).
