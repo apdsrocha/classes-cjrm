@@ -6,29 +6,32 @@
 
 **Index**
 
-[Básicos - variáveis](/back-to-basics/01-pt.md).
+[Variáveis](/class-notes/01-pt.md).
 
-[Básicos - tipos de dados](/back-to-basics/02-pt.md).
+[Tipos de dados](/class-notes/02-pt.md).
 
-[Básicos - controle de fluxo](/back-to-basics/03-pt.md).
+[Controle de fluxo](/class-notes/03-pt.md).
 
-[Funções e Métodos](/back-to-basics/04-pt.md).
+[Funções e Métodos](/class-notes/04-pt.md).
 
-[Objetos](/back-to-basics/05-pt.md).
+[Objetos](/class-notes/05-pt.md).
+
+[Escopo](/class-notes/06-pt.md).
 
 # [EN] - study notes + basic concepts
 > An attempt at taking notes of the logical sequence [Roger Melo](https://www.twitter.com/rogermelo) established in his JS course.
 
 **Index**
 
-[Basics - variables](/back-to-basics/01-eng.md).
+[Variables](/class-notes/01-eng.md).
 
-[Basics - data types](/back-to-basics/02-eng.md).
+[Data types](/class-notes/02-eng.md).
 
-[Basics - control flux](/back-to-basics/03-eng.md).
+[Control flux](/class-notes/03-eng.md).
 
-[Functions and Methods](/back-to-basics/04-eng.md).
+[Functions and Methods](/class-notes/04-eng.md).
 
-[Objects](/back-to-basics/05-eng.md).
+[Objects](/class-notes/05-eng.md).
 
+[Scope](/class-notes/06-eng.md).
 
