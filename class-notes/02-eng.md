@@ -339,3 +339,75 @@ JavaScript atributes values `true` & `false` to determined values/types.
 > NaN
 
 Any other value returns `true`
+
+
+
+## Primitive Types vs Reference Types
+
+> Primitive types are:
+
+*Numbers*
+*Strings*
+*Booleans*
+*Null*
+*Undefined*
+*Symbol*
+*BigInt*
+
+
+> Reference types are:
+
+*Every type of object*
+*- Object literals*
+*- Arrays*
+*- Functions*
+*- Dates*
+*- Every other object there is*
+
+The difference between them is in the way they are stored in memory. When we create a primitive type and assign it to a variable, it is saved in the `stack` (a pile of different values in memory). These values can be accessed quickly, but space on the stack is limited.
+
+When we create a reference type, it is stored in the `heap`. The heap has more space available to store larger and more complex objects (like literal objects and arrays), but it is a little slower.
+
+**They are two parts of the computer memory used for two different things.**
+
+When storing a primitive value in a variable, it stays in the `stack` and is accessed through the name of the variable. But when storing a reference type in a variable, such as an object, it is stored in the `heap`. The `stack` stores a variable pointing to the object in the `heap`.
+
+This has implications for how we write our code. Here's what happens when we copy primitive types:
+```
+let scoreOne = 50  // primitive type, with variable (identifier) that allows us to access its value.
+
+let scoreTwo = scoreOne // a copy of the primitive value is created on the stack at different positions in memory with different identifiers.
+
+console.log(scoreOne)
+console.log(scoreTwo)
+
+// 50
+// 50
+
+scoreOne = 100  // when we change the value of the first variable the value in the scoreTwo variable is not affected.
+
+console.log(scoreOne)
+console.log(scoreTwo)
+
+// 100
+// 50
+```
+
+However, when creating copies of reference types, the behavior is different:
+```
+let userOne = {name: 'ana', score: 100} 
+\\ it is a type of reference and therefore stored in the `heap`. In the stack we have a pointer stored in the userOne variable that points to the object created in the `heap`.
+
+let userTwo = userOne 
+\\ a new object was not created in the `heap`. The new variable stores a new pointer that points to the same object in the heap.
+
+userOne.score = 50  
+
+console.log(userOne.score)
+console.log(userTwo.score)
+
+\\ 50
+\\ 50
+```
+
+**When we create a copy of primitive values, we store them in different memory spaces in the stack. But when creating copies of reference values, we are only copying the pointer, which points to the same object in the `heap`. This means that when we modify the object, the change is also reflected in the copy, since the pointer is indicating the same object.**
