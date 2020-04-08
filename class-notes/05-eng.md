@@ -69,3 +69,60 @@ user.logBlogPosts()
 // Pumpkin Soup 30
 // 4 mashed potatoes recipes 45
 ```
+
+## Math Object
+
+The Math Object is one of several built-in objects in the language. It offers a number of methods and properties.
+
+**Example of properties**
+```
+console.log(Math.PI)
+console.log(Math.E)
+
+// 3.141592653589793
+// 2.718281828459045
+```
+
+**Example of methods**
+
+To round the number using the standard convention (if the decimal place is up to .4, round down, if the decimal place is .5 and bigger round up) we can use the `Math.round()` property:
+```
+const roundNumber = 7.7
+
+console.log(Math.round(roundNumber))
+
+// 8
+```
+
+To round the number down, we can user `Math.floor()`:
+```
+const roundDown = 5.9
+
+console.log(Math.floor(roundDown))
+
+// 5
+```
+
+To round the number up, we can use `Math.ceil()`:
+```
+const roundUp = 3.2
+
+console.log(Math.ceil(roundUp))
+
+// 4
+```
+
+To remove the decimal part and return the integer we can use `Math.trunc()`:
+```
+const roundInteger = 8.8
+
+console.log(Math.trunc(roundInteger))
+
+// 8
+```
+
+To generate a random number between 0 e 1 we can use `Math.random()`:
+```
+const randomNumber = Math.random()
+
+```
