@@ -46,3 +46,26 @@ let user = {
 
 user.login()
 ```
+
+## Objects in Arrays
+
+Storing objects inside arrays is possible and often seen. It is likely when obtaining data from an API or database that it follows the array format with objects.
+```
+let user = {
+  name: 'John',
+  blogPosts: [
+    { title: 'Pumpkin Soup', likes: 30 },
+    { title: '4 mashed potatoes recipes', likes: 45 }
+  ],
+  logBlogPosts () {
+    this.blogPosts.forEach(post => {
+      console.log(post.title, post.likes)
+    })
+  }
+}
+
+user.logBlogPosts()
+
+// Pumpkin Soup 30
+// 4 mashed potatoes recipes 45
+```
