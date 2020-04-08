@@ -5,4 +5,4 @@
 The DOM describes the HTML page in a hierarchical tree format - a tree of `nodes`. Each element is known as a `node` (distinguished by elements such as title, h1 and p that contain` text nodes` within them).
 
  
-![Graph with representation of DOM tree with main root node (HTML), element nodes (title, div, h1, p) and text nodes](./img/dom-tree.png)
+![alt text](../img/dom-tree.png "Graph with representation of DOM tree with main root node (HTML), element nodes (title, div, h1, p) and text nodes")
