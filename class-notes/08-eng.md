@@ -6,3 +6,33 @@ The DOM describes the HTML page in a hierarchical tree format - a tree of `nodes
 
  
 ![alt text](../img/dom-tree.png "Graph with representation of DOM tree with main root node (HTML), element nodes (title, div, h1, p) and text nodes")
+
+
+
+## Query Selector & Query Selector All
+
+When we add, remove or modify content on the page, we need to decide which element of the page to manipulate and then look for that element in the DOM. 
+
+To search for this reference (the node of the searched element) we can use some methods.
+
+Example storing a tag or selector reference in a variable:
+```
+const paragraph = document.querySelector('p')
+// selects the first p tag found.
+
+const divError = document.querySelector('div.error')
+// selects the first div with error class.
+```
+
+To search for multiple elements we can use the `querySelectorAll`, which runs through the DOM, stores all references with the pointed tag / selector, returning a Node List.
+```
+const errors = document.querySelectorAll ('.error')
+// returns a node list with all the elements in the document that have the error class.
+
+console.log(errors)
+// Node List(2) [p.error, div.error]
+```
+
+The Node List (a collection of nodes) is similar to an array (it even allows using some array methods) but it is not an array.
+
+[Here is more information on Node Lists and a listing of properties and methods.](https://developer.mozilla.org/en-US/docs/Web/API/NodeList).
