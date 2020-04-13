@@ -36,3 +36,20 @@ console.log(errors)
 The Node List (a collection of nodes) is similar to an array (it even allows using some array methods) but it is not an array.
 
 [Here is more information on Node Lists and a listing of properties and methods.](https://developer.mozilla.org/en-US/docs/Web/API/NodeList).
+
+
+## Other ways to make queries in the DOM
+
+An alternative to obtain the reference of an element is to use the `id` of a tag by using the method `getElementByID`
+```
+const title = document.getElementByID('title')
+```
+
+Likewise, we can use the class-specific method via `getElementsByClassName` which returns an HTML Collection.
+```
+const title = document.getElementsByClassName('title')
+```
+
+An HTML Collection is similar to a Node List, but more limited; [you can read more about it here](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCollection).
+
+**It is preferable to use `querySelector` and` querySelectorAll` as they are more flexible. In addition to accepting CSS selectors and queries for any required elements, they also return a Node List (less limited than HTML Collections).
