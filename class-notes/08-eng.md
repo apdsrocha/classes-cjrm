@@ -82,3 +82,32 @@ div.innerHTML += '<h2>Novo h2</h2'>
 ```
 
 The `innerText` and` innerHTML` properties are **getters and setters**, which means that they can **get and set values**.
+
+
+## Getting and setting attributes
+
+We can select and change attributes of HTML tags using `getAttribute` and` setAttribute`.
+
+```
+//EXAMPLE 1
+
+const link = document.querySelector('a')
+// get reference to 'p' tag
+
+link.getAttribute('href');
+// get only the value of the 'href' attribute
+
+link.setAttribute('href', 'https://google.com')
+// two arguments: the attribute we want to change and the value we want to change to.
+
+
+// EXAMPLE 2
+
+const paragraph = document.querySelector('p')
+// get reference to 'p' tag
+
+paragrah.setAttribute('class', 'success')
+// change the paragraph class to 'sucess'
+// if the attribute does not exist, it will be created
+
+```
