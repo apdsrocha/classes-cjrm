@@ -52,4 +52,33 @@ const title = document.getElementsByClassName('title')
 
 An HTML Collection is similar to a Node List, but more limited; [you can read more about it here](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCollection).
 
-**It is preferable to use `querySelector` and` querySelectorAll` as they are more flexible. In addition to accepting CSS selectors and queries for any required elements, they also return a Node List (less limited than HTML Collections).
+**It is preferable to use `querySelector` and` querySelectorAll` as they are more flexible. In addition to accepting CSS selectors and queries for any required elements, they also return a Node List (less limited than HTML Collections).**
+
+## Modifying text and HTML elements
+
+>After selecting an element in the DOM and obtaining its reference, it is possible to use properties to change it.
+
+```
+const paragraph = document.querySelector('p')
+// selecting the p element
+
+paragraph.innerText = 'Texto substituto'
+// changing the text inside the p tag overwriting what is already there
+
+paragraph.innerText += 'Texto adicionado'
+// adding to the text that was already present
+```
+
+It is also possible to change the HTML within an element.
+```
+const div = document.querySelector('.content')
+// selecting an element
+
+div.innerHTML = '<h2>Novo h2</h2'>
+// tag inserted into the div overwriting what was already there.
+
+div.innerHTML += '<h2>Novo h2</h2'>
+// tag added keeping what was already inside the div.
+```
+
+The `innerText` and` innerHTML` properties are **getters and setters**, which means that they can **get and set values**.
