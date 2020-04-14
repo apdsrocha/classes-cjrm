@@ -111,3 +111,25 @@ paragrah.setAttribute('class', 'success')
 // if the attribute does not exist, it will be created
 
 ```
+
+
+
+## Modifying in-line styles
+
+It is possible to use `setAttribute` to make style changes, but keep in mind that they are overwritten. One way to include style changes without overwriting is to use the `style` property.
+
+```
+const title = document.querySelector('h1')
+// get h1 reference
+
+title.style.margin = '50px'
+// changes the margin to 50 pixels
+
+title.style.fontSize = '48px'
+// changes the font size, remembering that we need to write in 'camel case'
+
+title.style.margin = ''
+// removes the margin property
+```
+
+When we want to manipulate style in-line we can use the `style` property. But most of the time it is more efficient to write CSS rules in a style sheet and manipulate the classes of the elements.
