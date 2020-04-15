@@ -133,3 +133,30 @@ title.style.margin = ''
 ```
 
 When we want to manipulate style in-line we can use the `style` property. But most of the time it is more efficient to write CSS rules in a style sheet and manipulate the classes of the elements.
+
+
+
+
+## Getting, adding, removing and toggling CSS classes
+
+
+Through the `classList` property, we can access a` DOMTokenList` (an object similar to an array) that shows us the list of classes of an element. We can also chain together methods that allow us to make modifications:
+```
+const paragraph = document.querySelector('p')
+// get reference from the 'p' tag
+
+paragraph.classList.add('error')
+// adds class 'error' to element 'p'
+
+paragraph.classList.remove('error')
+// removes the 'error' class from the 'p' element
+```
+
+To add a class if the element doesn't already have it, or remove if it does have it we can use `toggle`:
+```
+title = document.querySelector('h1')
+// get the 'h1' tag reference
+
+title.classList.toggle('test')
+// remove or add the class 'test'
+```
