@@ -160,3 +160,49 @@ title = document.querySelector('h1')
 title.classList.toggle('test')
 // remove or add the class 'test'
 ```
+
+
+
+
+
+## Parents, children and siblings
+
+> In the DOM tree it is possible to use different types of relationships (parents; children; siblings) to traverse the DOM between different elements and obtain larger selections of elements.
+
+
+![alt text](../img/dom-relationships.png "Graphic scheme with representation of the DOM tree with its root node (HTML) and signaling hierarchy between parents / children and siblings.")
+
+
+When we need to obtain the reference of several elements within a tag (or if they are dynamic and we are not sure how many elements we want to search for within a tag) we can select the "parent" tag and obtain the reference of all its "children" by making use of the `children` property.
+```
+const article = document.querySelector('article')
+// get reference of the 'article' tag
+
+article.children 
+// HTML Collection with all elements that are inside the article (does not allow iterating with forEach)
+
+Array.from(article.children)
+// Array with all elements that are inside the 'article' tag (we can now use Array methods)
+```
+
+We can also obtain the reference of an element and discover the element 'parent' (which is directly above in the DOM tree).
+```
+const title = document.querySelector('h2')
+// get reference of the 'h2' tag
+
+title.parentElement
+// we managed to get the parent of the title element
+
+title.parentElement.parentElement
+// you can chain methods together and find the element above the parent.
+```
+
+
+To discover the sibling elements:
+```
+title.nextElementSibling
+// following tag
+
+title.previousElementSibling
+// previous tag (returns `null` if it does not exist)
+```
