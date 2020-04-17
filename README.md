@@ -22,6 +22,8 @@
 
 [DOM - Document Object Model](/class-notes/08-pt.md).
 
+[DOM Events](/class-notes/09-pt.md).
+
 
 # [EN] - study notes + basic concepts
 > An attempt at taking notes of the logical sequence [Roger Melo](https://www.twitter.com/rogermelo) established in his JS course.
@@ -43,3 +45,5 @@
 [The keyword 'this'](/class-notes/07-eng.md).
 
 [DOM - Document Object Model](/class-notes/08-eng.md).
+
+[DOM Events](/class-notes/09-eng.md).
