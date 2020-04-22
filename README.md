@@ -22,7 +22,7 @@
 
 [DOM - Document Object Model](/class-notes/08-pt.md).
 
-[DOM Events](/class-notes/09-pt.md).
+[Eventos do DOM](/class-notes/09-pt.md).
 
 
 # [EN] - study notes + basic concepts
