@@ -126,3 +126,21 @@ To generate a random number between 0 e 1 we can use `Math.random()`:
 const randomNumber = Math.random()
 
 ```
+
+
+
+**Destructuring Assignment Syntax**
+
+> Destructuring Assignment is an expression that makes it possible to assign (to variables) copies of items in an array or values of an object.
+```
+const obj = {
+  prop1: a,
+  prop2: b,
+  prop3: c
+}
+
+const { prop1, prop2 } = obj
+
+prop1 // a
+prop2 // b
+```
