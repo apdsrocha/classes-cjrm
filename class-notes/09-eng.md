@@ -87,3 +87,47 @@ ul.addEventListener('click', event => {
   }
 })
 ```
+
+
+## Events in forms
+
+> Forms exist to capture input information provided by users. An example could be a feedback form - to capture this information we use events - mainly `submit` events. Clicking on a submit button triggers the click event but also triggers a `form submit` event. In this case, we can set up an event listener that reacts to this so when the `form` is sent we can capture this information. Other types of events we can interact with are keyboard events (when the user presses or releases the key).
+
+### The submit event
+
+When we want to listen for a user event it is important to link the listening event to the form (and not to the button, as we have been doing until then). Because what we want is to listen to the sending of information, and not the button (which is just one element of the form).
+```
+const form = document.querySelector('.signup-form')
+
+form.addEventListener('submit', event => {
+  event.preventDefault()
+})
+// avoids default behavior of reloading the page when submitting
+```
+
+To obtain the reference of what was inserted in the form, we can use a few different forms. For example, using the ID in the input tag:
+``` 
+const form = document.querySelector('.signup-form')
+const usernameInput = document.querySelector('#username')
+
+form.addEventListener('submit', event => {
+  event.preventDefault()
+  console.log(usernameInput.value)
+})
+// shows the input value on the console.
+```
+
+Another way is to use the `form` reference to access the` ID` or `name`.
+```
+form.addEventListener('submit', event => {
+  console.log(form.username.value)
+})
+```
+
+It is still possible to use `event.target` instead of `form` to access the username and therefore its value.
+```
+
+form.addEventListener('submit', event => {
+  console.log(event.target.username.value)
+})
+```
