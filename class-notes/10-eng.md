@@ -44,3 +44,26 @@ Match: 123@[
   
   \
 To read more about it, check the [Regex in MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions).
+
+
+## Using Regex in JavaScript
+
+> Through the regex method `test`:
+
+```
+const username = 'ana'
+const pattern = /^[a-z]{6,}$/
+
+pattern.test(username)
+// method 'test' returns a boolean
+```
+
+> Through the string method `search`:
+```
+const username = 'ana'
+const pattern = /^[a-z]{6,}$/
+
+username.search(pattern)
+// 'search' method returns the index where the match begins. 
+// If it's not a match, it returns -1
+```
