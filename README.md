@@ -24,6 +24,8 @@
 
 [Eventos do DOM](/class-notes/09-pt.md).
 
+[Introdução a Regex](/class-notes/10-pt.md).
+
 
 # [EN] - study notes + basic concepts
 > An attempt at taking notes of the logical sequence [Roger Melo](https://www.twitter.com/rogermelo) established in his JS course.
@@ -47,3 +49,5 @@
 [DOM - Document Object Model](/class-notes/08-eng.md).
 
 [DOM Events](/class-notes/09-eng.md).
+
+[Introduction to Regex](/class-notes/10-eng.md).
