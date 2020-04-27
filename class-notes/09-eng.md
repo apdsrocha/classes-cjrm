@@ -131,3 +131,30 @@ form.addEventListener('submit', event => {
   console.log(event.target.username.value)
 })
 ```
+
+
+
+## Keyboard Events
+
+### 'Key Up' Event
+
+> This event will execute a callback function every time a  pressed key is released (or the exact moment the key goes back up).
+
+```
+const form = document.querySelector('form')
+
+form.idInput.addEventListener('keyup', event => 
+console.log(event.target.value))
+// when you press and release the key, the function is executed and the value of the input is displayed on the console.
+```
+
+Example of input validation in real time:
+```
+form.idInput.addEventListener('keyup', event => {
+if (isValidUsername) {
+  form.idInput.setAttribute('class', 'success')
+  return
+}
+form.idInput.setAttribute('class','error')
+})
+```
