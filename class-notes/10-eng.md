@@ -17,7 +17,7 @@ Match: `javascript`
   
   \
 --> To match any letter from 'a' to 'z' we use a character set '[]':  
-`/^[a-Z]$`  
+`/^[a-z]$`  
 Match: b  
 (expression matches only 1 character, 'bc' is not a match)  
   
