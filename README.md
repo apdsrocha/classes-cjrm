@@ -26,10 +26,13 @@
 
 [Introdução a Regex](/class-notes/10-pt.md).
 
+[O objeto window](/class-notes/11-pt.md).
+
 
 # [EN] - study notes + basic concepts
 > An attempt at taking notes of the logical sequence [Roger Melo](https://www.twitter.com/rogermelo) established in his JS course.
-
+  
+  
 **Index**
 
 [Variables](/class-notes/01-eng.md).
@@ -51,3 +54,5 @@
 [DOM Events](/class-notes/09-eng.md).
 
 [Introduction to Regex](/class-notes/10-eng.md).
+
+[The window Object](/class-notes/11-eng.md).
