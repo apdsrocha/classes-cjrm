@@ -1,4 +1,4 @@
 # The Window object
 
 
-> 
+> `window` is an object that exists in the global scope of an application. In JavaScript there is always an object in a global scope where all methods and properties are hung. This object varies according to the environment where the application is being executed - in Node.JS (a platform for JavaScript to be run on the back-end) it is the global object. In the front-end, this object is called `window` (the browser window) and a lot of methods and properties are stored in this object. When using its properties, we do not need to use the word `window`, since the browser can infer that it is a property that belongs to `window`. For example: console.log exists in the window object.
