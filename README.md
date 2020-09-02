@@ -2,7 +2,7 @@
 
 
 # [PT-BR] - uma coletânia de conceitos + estudos básicos
-> Uma tentativa de anotar uma sequência básica de javascript, seguindo a ordem e ensinamentos do curso de JS de [Roger Melo](https://www.twitter.com/rogermelo). 
+> Uma tentativa de anotar uma sequência básica de javascript, seguindo a ordem e ensinamentos do curso de JS de [Roger Melo](https://twitter.com/rogermelodev). 
 
 **Index**
 
@@ -27,6 +27,8 @@
 [Introdução a Regex](/class-notes/10-pt.md).
 
 [O objeto window](/class-notes/11-pt.md).
+
+[Métodos de array](/class-notes/12-pt.md).
 
 
 # [EN] - study notes + basic concepts
@@ -56,3 +58,5 @@
 [Introduction to Regex](/class-notes/10-eng.md).
 
 [The window Object](/class-notes/11-eng.md).
+
+[Array Methods](/class-notes/12-eng.md).
